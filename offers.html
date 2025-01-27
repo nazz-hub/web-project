@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="offer.css" />
+    <title>Travel Offers</title>
+</head>
+<body>
+  
+    <nav>
+        <!-- Logo -->
+        <div class="logo">Travel.co</div>
+
+        <!-- Hamburger menu (mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">services</a>
+                <ul class="dropdown">
+                    <li><a href="service.html">Room Service</a></li>
+                    <li><a href="service2.html">Spa and Wellness</a></li>
+                    <li><a href="service3.html">Swimming Pool</a></li>
+                    <li><a href="service3.html">Fitness Center</a></li>
+                    <li><a href="service3.html">Concierge Services</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Booking</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  
+    <header style="background-color: #35424a; color: white; padding: 20px;">
+        <div class="section__container">
+            <div class="header__content">
+                <h1>Exclusive Travelling Offer</h1>
+                <!-- <p>
+                    Embark on your dream adventure with our exclusive travel deals! 
+                    Enjoy unmatched discounts on flights, hotels, and vacation packages
+                     to stunning destinations worldwide.<br> Whether you're seeking a relaxing 
+                     beach getaway or an exciting city escape, we've got you covered.<br> Book 
+                     now and make unforgettable memories while saving big on your next journey!
+                </p> -->
+            </div>
+        </div>
+    </header>
+   
+    <section class="offers">
+        <div class="offer">
+            <img src="gateway.jpg" alt="Offer 1">
+            <h2>Beach Gateway</h2>
+            <p>Enjoy a relaxing week at the beach with our exclusive package.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="offer">
+            <img src="mountain.jpeg" alt="Offer 2">
+            <h2>Mountain Adventure</h2>
+            <p>Experience the thrill of mountain climbing with our guided tours.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="offer">
+            <img src="culture.jpeg" alt="Offer 3">
+            <h2>Cultural Experience</h2>
+            <p>Immerse yourself in the local culture with our unique experiences.</p>
+            <button>Learn More</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Hotel Booking. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+   </body>
+   </html>
