@@ -1,0 +1,60 @@
+/* Styles for Gateway Beach Hotels Page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Restored original background color */
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    background-image: linear-gradient(
+        rgba(45,92,132,.5),
+        rgba(45,92,132,.5)
+        ),
+        url("backgound1.jpeg");
+      
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.hotel-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.hotel {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    background-color: white;
+}
+
+.hotel img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.booking-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.booking-link:hover {
+    background-color: #218838;
+}
