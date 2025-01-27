@@ -1,0 +1,170 @@
+/* Basic styles for the contact page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('plane-flying_'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #35424a; /* Meesho theme color */
+    padding: 0.8rem 1rem;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    position: relative;
+    margin: 0 0.5rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #aa86c7;
+    border-radius: 4px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: #333;
+    list-style: none;
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li a {
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+.menu li:hover .dropdown {
+    display: block;
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+   
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color:  #35424a;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu li {
+        text-align: center;
+        margin: 0;
+    }
+
+    .dropdown {
+        position: static;
+        box-shadow: none;
+    }
+}
+header {
+    background: rgba(53, 66, 74, 0.8); /* Semi-transparent background */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #2c3e50; /* Darker button color */
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background: #34495e; /* Lighter on hover */
+}
+
+#location {
+    margin-top: 20px;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+}
