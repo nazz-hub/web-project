@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="service.css">
+    <title>Room Service</title>
+</head>
+<body>
+   
+        <nav>
+            <!-- Logo -->
+            <div class="logo">Travel.co</div>
+    
+            <!-- Hamburger menu (mobile) -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+              
+                <div></div>
+                <div></div>
+            </div>
+    
+            <!-- Navigation Menu -->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="service.html">services</a>
+                    <ul class="dropdown">
+                        <li><a href="service.html">Room Service</a></li>
+                        <li><a href="service2.html">Spa and Wellness</a></li>
+                        <li><a href="service3.html">Swimming Pool</a></li>
+                        <li><a href="service3.html">Fitness Center</a></li>
+                        <li><a href="service3.html">Concierge Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+       
+        <h1>Room Service</h1>
+        <p>Enjoy our delicious meals delivered right to your room!</p>
+    </header>
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li>
+                Breakfast - $10
+                <button class="order-button">Order</button>
+            </li>
+            <li>
+                Lunch - $15
+                <button class="order-button">Order</button>
+            </li>
+            <li>
+                Dinner - $20
+                <button class="order-button">Order</button>
+            </li>
+            <li>
+                Snacks - $5
+                <button class="order-button">Order</button>
+            </li>
+        </ul>
+    </section>
+    <section id="ordering">
+        <h2>Ordering Instructions</h2>
+        <p>To place an order:</p>
+        <ol>
+            <li>Select the items you wish to order from the menu.</li>
+            <li>Click the "Order" button next to each item.</li>
+            <li>For any special requests, please mention them in the comments section.</li>
+            <li>Call the front desk or use the in-room tablet to confirm your order.</li>
+            <li>Enjoy your meal!</li>
+        </ol>
+    </section>
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>For any inquiries, please contact us at:</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: roomservice@hotel.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Hotel Booking. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
