@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <nav>
+        <!-- Logo -->
+        <div class="logo">Travel.co</div>
+
+        <!-- Hamburger menu (mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+          
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="service.html">services</a>
+                <ul class="dropdown">
+                    <li><a href="service.html">Room Service</a></li>
+                    <li><a href="service2.html">Spa and Wellness</a></li>
+                    <li><a href="service3.html">Swimming Pool</a></li>
+                    <li><a href="service3.html">Fitness Center</a></li>
+                    <li><a href="service3.html">Concierge Services</a></li>
+                </ul>
+            </li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Let's Keep in Touch</h1>
+    </header>
+    <section id="contact-info">
+        <h2>Contact Agency</h2>
+        <p>Address: 120 E 87th Street, New York</p>
+        <p>Phone: 1-800-987-9898</p>
+        <p>Email: info@domain-name.com</p>
+    </section>
+
+    <main>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+       
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Hotel Booking. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
